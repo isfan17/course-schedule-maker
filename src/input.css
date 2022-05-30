@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/*UNTUK MENGHILANGKAN TUTORIAL CARA DOWNLOAD PDF SAAT MENDOWNLOAD JADWAL SEBAGAI PDF*/
+@media print {
+    .hasilMatkul .hasil{
+        break-inside: avoid;
+    }
+
+    .hasilMatkul .noprint {
+        display: none;
+    }
+}
